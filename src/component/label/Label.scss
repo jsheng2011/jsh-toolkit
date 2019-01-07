@@ -1,0 +1,11 @@
+@import 'App/stylesheet/essentials/index.scss';
+
+.jsh-label{
+    @extend %heading-weight;
+    &__block{
+        display: block;
+    }
+    &--space-down-s{
+        @extend %down-s-space;
+    }
+}

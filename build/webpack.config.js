@@ -5,7 +5,7 @@ let path = require('path');
 
 module.exports = {
     entry: {
-        app: path.resolve(__dirname, '../src/app/index.js')
+        app: path.resolve(__dirname, '../sample/index.js')
     },
     output: {
         publicPath: '/'
@@ -40,7 +40,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: path.resolve(__dirname, '../src/app/index.html'),
+            template: path.resolve(__dirname, '../sample/index.html'),
             filename: './index.html'
         }),
         new MiniCssExtractPlugin({
@@ -50,10 +50,11 @@ module.exports = {
     ],
     resolve: {
         alias: {
+            Component: path.resolve(__dirname, '../src/component')
         }
     },
     devServer: {
         historyApiFallback: true,
-        port: 9090
+        port: 8888
     }
 };
