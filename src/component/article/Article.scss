@@ -1,6 +1,7 @@
 
-@import '../../essential/index.scss';
+@import '~@jsh/essential/index.scss';
 
 .jsh-article{
     // @extend %p;
+    color:blue!important;
 }

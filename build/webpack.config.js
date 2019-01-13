@@ -2,7 +2,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin'),
     MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 let path = require('path');
-
+console.log('path.resolve(__dirname, \'src\')', path.resolve(__dirname, 'src'));
 module.exports = {
     entry: {
         app: path.resolve(__dirname, '../sample/index.js')
@@ -14,7 +14,14 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                exclude: /node_modules/,
+
+                // exclude: /node_modules/,
+                include: [
+                    path.resolve(__dirname, '../sample'),
+
+                    // path.resolve(__dirname, '../src/component/article/article.js')
+                    path.resolve(__dirname, '../src')
+                ],
                 use: {
                     loader: 'babel-loader'
                 }

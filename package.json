@@ -1,14 +1,16 @@
 {
-  "name": "jsh-toolkit",
+  "name": "@jsh/toolkit",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --config ./build/webpack.config.js --mode development ",
+    "dev": "lerna bootstrap --hoist && webpack-dev-server --config ./build/webpack.config.js --mode development ",
+    "start": "npm run bootstrap && webpack-dev-server --config ./build/webpack.config.js --mode development ",
     "build": "webpack --config ./build/webpack.config.js --mode production",
     "lint": "eslint . --ext .js",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "bootstrap": "lerna bootstrap --hoist"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +26,7 @@
     "eslint-plugin-react": "^7.11.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "lerna": "^3.8.5",
     "mini-css-extract-plugin": "^0.4.5",
     "node-sass": "^4.10.0",
     "sass-loader": "^7.1.0",

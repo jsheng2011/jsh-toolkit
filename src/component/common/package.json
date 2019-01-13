@@ -1,0 +1,22 @@
+{
+  "name": "@jsh/commons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@jsh/essential": "1.0.0",
+    "@jsh/article": "1.0.0",
+    "@jsh/button": "1.0.0",
+    "@jsh/button-group": "1.0.0",
+    "@jsh/input": "1.0.0",
+    "@jsh/label": "1.0.0",
+    "@jsh/section": "1.0.0",
+    "@jsh/textarea": "1.0.0"
+  }
+}
