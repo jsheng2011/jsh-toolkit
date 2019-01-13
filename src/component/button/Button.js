@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import cx from 'classnames';
 
-// import './Button.scss';
+import './Button.scss';
 
 export default class Button extends Component {
     render() {
@@ -22,3 +22,7 @@ export default class Button extends Component {
         );
     }
 }
+
+export {
+    Button
+};

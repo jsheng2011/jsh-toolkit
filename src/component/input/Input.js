@@ -16,3 +16,7 @@ export default class Input extends Component {
         );
     }
 }
+
+export {
+    Input
+};

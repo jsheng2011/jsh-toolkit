@@ -16,3 +16,6 @@ export default class Section extends Component {
         );
     }
 }
+export {
+    Section
+};

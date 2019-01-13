@@ -35,3 +35,7 @@ export default class TextArea extends Component {
         );
     }
 }
+
+export {
+    TextArea
+};

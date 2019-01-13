@@ -17,3 +17,5 @@ export default class Label extends Component {
         );
     }
 }
+
+export {Label};
