@@ -8,19 +8,20 @@ export default class ButtonGroup extends Component {
     }
 
     _renderButtons() {
-        return this.props.children.map(child => {
-            console.log(child);
+        return this.props.children.map(child =>
 
-            return cloneElement(child, {
+        // console.log(child);
+
+            cloneElement(child, {
                 onClick: () => {
-                    this.props.onChange(child.props.name);
+                    this.props.onChange && this.props.onChange(child.props.name);
                     child.props.onClick && child.props.onClick();
                 },
 
                 className: `jsh-buttonGroup__button ${child.props.className ? child.props.className : ''}`
             })
-            ;
-        });
+
+        );
     }
     render() {
         const {...others} = this.props;

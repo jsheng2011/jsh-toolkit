@@ -1,0 +1,23 @@
+@import '~@jsh/essential/index.scss';
+
+.jsh-menu{
+    background-color: $white;
+    border: 1px solid $lightGray;
+    // TODO: color mgmt
+    box-shadow: 1px 2px 11px $gray;
+    border-radius: 4px;
+    overflow: hidden;
+    &__item{
+        font-size: 14px;
+        padding: 0.5em 1em;
+        border-top:1px solid $lightGray;
+        &:hover{
+            background: $blue;
+            color: $white;
+            cursor: pointer;
+        }
+        &:nth-child(1){
+            border-top: none;
+        }
+    }
+}

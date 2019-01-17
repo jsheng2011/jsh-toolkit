@@ -1,0 +1,15 @@
+{
+  "name": "@jsh/positioningContainer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "positioningContainer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@jsh/essential": "1.0.0"
+  }
+}

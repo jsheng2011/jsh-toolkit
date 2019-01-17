@@ -1,0 +1,8 @@
+@import '~@jsh/essential/index.scss';
+
+.jsh-positioningContainer{
+    &--fixed{
+        position: fixed;
+        z-index: $topLayer;
+    }
+}

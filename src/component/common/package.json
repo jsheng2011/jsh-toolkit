@@ -17,6 +17,8 @@
     "@jsh/input": "1.0.0",
     "@jsh/label": "1.0.0",
     "@jsh/section": "1.0.0",
-    "@jsh/textarea": "1.0.0"
+    "@jsh/textarea": "1.0.0",
+    "@jsh/menu": "1.0.0",
+    "@jsh/positioningContainer": "1.0.0"
   }
 }
