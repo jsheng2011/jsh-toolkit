@@ -19,6 +19,7 @@
     "@jsh/section": "1.0.0",
     "@jsh/textarea": "1.0.0",
     "@jsh/menu": "1.0.0",
-    "@jsh/positioningContainer": "1.0.0"
+    "@jsh/positioningContainer": "1.0.0",
+    "@jsh/fullScreenContainer": "1.0.0"
   }
 }

@@ -4,9 +4,10 @@ import cx from 'classnames';
 
 export default class Section extends Component {
     render() {
-        const {spaceDown, ...others} = this.props;
-        const classnames = cx('jsh-section', {
-            [`jsh-section--space-down-${spaceDown}`]: spaceDown
+        const {spaceDown, liquid, className, ...others} = this.props;
+        const classnames = cx('jsh-section', className, {
+            [`jsh-section--space-down-${spaceDown}`]: spaceDown,
+            'jsh-section--liquid': liquid
         });
 
         return (

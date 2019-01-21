@@ -4,14 +4,20 @@ import cx from 'classnames';
 
 export default class PositioningContainer extends Component {
     render() {
-        const {fixed, x, y} = this.props;
+        const {fixed, absolute, relative, x, y, left, right, top, bottom} = this.props;
         const classnames = cx('jsh-positioningContainer', {
-            'jsh-positioningContainer--fixed': fixed
+            'jsh-positioningContainer--fixed': fixed,
+            'jsh-positioningContainer--absolute': absolute,
+            'jsh-positioningContainer--relative': relative
         });
 
         const styles = {
             left: `${x}px`,
-            top: `${y}px`
+            top: `${y}px`,
+            left,
+            right,
+            top,
+            bottom
         };
 
         return (

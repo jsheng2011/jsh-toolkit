@@ -1,0 +1,11 @@
+@import '~@jsh/essential/index.scss';
+
+.jsh-fullScreenContainer{
+    width: 100%;
+    height:100%;
+    position: fixed;
+    z-index: $topLayer;
+    top: 0;
+    left: 0;
+    background-color:$white;
+}

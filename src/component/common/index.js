@@ -9,3 +9,4 @@ export * from '@jsh/menu';
 
 // container
 export * from '@jsh/positioningContainer';
+export * from '@jsh/fullScreenContainer';

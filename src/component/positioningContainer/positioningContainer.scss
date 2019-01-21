@@ -5,4 +5,10 @@
         position: fixed;
         z-index: $topLayer;
     }
+    &--absolute{
+        position: absolute;
+    }
+    &--relative{
+        position: relative;
+    }
 }
