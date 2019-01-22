@@ -4,16 +4,16 @@ import cx from 'classnames';
 
 export default class FullScreenContainer extends Component {
     render() {
-        const {enable} = this.props;
+        const {style} = this.props;
         const classnames = cx('jsh-fullScreenContainer', {
         });
 
         const styles = {
-
+            ...style
         };
 
         return (
-            <div className={enable ? classnames : null} style={styles}>
+            <div className={classnames} style={styles}>
                 {this.props.children}
             </div>
         );
